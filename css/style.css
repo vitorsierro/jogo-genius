@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color:  black;
+  display: flex;
+}
+
+.main-game {
+  height: 100%;
+  display: flex;
+  margin-left: 4rem;
+  align-items: center;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: 'green red'
+  'yellow blue';
+  grid-gap: 10px;
+  border: 3rem solid white;
+  background-color: white;
+  
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  
+}
+.red {
+  grid-area: red;
+  background-color: red;
+  border-top-right-radius: 100%;
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+}
+
+.green {
+  grid-area: green;
+  background-color: green;
+  border-top-left-radius: 100%;
+}
+
+.selected {
+   opacity: 0.6;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.tabela{
+  display: block;
+  background-color: white;
+  height: 100vh;
+  margin-left: 4rem;
+  width: 48%;
+}
